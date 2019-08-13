@@ -10,6 +10,8 @@ ap.add_argument("-u", "--username", required=True,
 	help="your twitter username")
 ap.add_argument("-p", "--password", required=True,
     help="your twitter password")
+ap.add_argument("-k", "--keyword", required=True,
+    help="your twitter password")
 args = vars(ap.parse_args())    
 
 class TwitterBot:
@@ -50,4 +52,4 @@ class TwitterBot:
 
 selorm = TwitterBot(args["username"], args["password"])
 selorm.login()
-selorm.like_tweet('react native')
+selorm.like_tweet(args["username"])
