@@ -15,6 +15,6 @@ Download Gecko Driver and paste it in your firefox directory
 
 ### Usage
 
-`python app.py -u [@USERNAME] -p [PASSWORD]`
+`python app.py -u [@USERNAME] -p [PASSWORD] -k [KEYWORD]`
 
 @CIRLORM
