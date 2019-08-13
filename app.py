@@ -1,4 +1,4 @@
-#USAGE python app.py -u [@USERNAME] -p [PASSWORD]
+#USAGE python app.py -u [@USERNAME] -p [PASSWORD] -k [KEYWORD]
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -52,4 +52,4 @@ class TwitterBot:
 
 selorm = TwitterBot(args["username"], args["password"])
 selorm.login()
-selorm.like_tweet(args["username"])
+selorm.like_tweet(args["keyword"])
