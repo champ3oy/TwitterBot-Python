@@ -11,7 +11,7 @@ ap.add_argument("-u", "--username", required=True,
 ap.add_argument("-p", "--password", required=True,
     help="your twitter password")
 ap.add_argument("-k", "--keyword", required=True,
-    help="your twitter password")
+    help="your twitter keywords, Posts to like")
 args = vars(ap.parse_args())    
 
 class TwitterBot:
